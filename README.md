@@ -75,8 +75,8 @@ MainActivity.java file
                         } catch (Exception e) {
                         e.printStackTrace();
                         }
-                        }
-                        }
+                      }
+                   }
             
             
             
