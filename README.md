@@ -28,7 +28,7 @@ The { }(curly brace) represents the json object and The [ ](square bracket) repr
             
             
             
-.java file            
+MainActivity.java file            
             
             
             
@@ -44,33 +44,33 @@ The { }(curly brace) represents the json object and The [ ](square bracket) repr
             
            
 
-                        import androidx.appcompat.app.AppCompatActivity;
+              import androidx.appcompat.app.AppCompatActivity;
 
-                        import org.json.JSONObject;
-                        import android.os.Bundle;
-                        import android.widget.TextView;
+              import org.json.JSONObject;
+              import android.os.Bundle;
+              import android.widget.TextView;
 
-                        public class MainActivity extends AppCompatActivity {
+              public class MainActivity extends AppCompatActivity {
 
-                        TextView textView1;
+              TextView textView1;
 
-                        public static final String JSON_STRING = "{\"employee\":{\"name\":\"Sachin\",\"salary\":56000,\"status\":married}}";
+              public static final String JSON_STRING = "{\"employee\":{\"name\":\"Sachin\",\"salary\":56000,\"status\":married}}";
 
-                        @Override
-                        protected void onCreate(Bundle savedInstanceState) {
-                        super.onCreate(savedInstanceState);
-                        setContentView(R.layout.activity_main);
+              @Override
+              protected void onCreate(Bundle savedInstanceState) {
+               super.onCreate(savedInstanceState);
+               setContentView(R.layout.activity_main);
 
-                        textView1 =  findViewById(R.id.textView1);
+                 textView1 =  findViewById(R.id.textView1);
 
-                        try {
-                             JSONObject emp = (new JSONObject(JSON_STRING)).getJSONObject("employee");
-                             String empname = emp.getString("name");
-                        int    empsalary = emp.getInt("salary");
+                   try {
+                        JSONObject emp = (new JSONObject(JSON_STRING)).getJSONObject("employee");
+                        String empname = emp.getString("name");
+                        int empsalary = emp.getInt("salary");
                         String empstatus= emp.getString("status");
 
-                        String str = "Employee Name:" + empname + "\n\n" + "Employee Salary:" + empsalary + "\n\n" + "Employee Status:" + empstatus;
-                        textView1.setText(str);
+                String str = "Employee Name:" + empname + "\n\n" + "Employee Salary:" + empsalary + "\n\n" + "Employee Status:" + empstatus;
+                textView1.setText(str);
 
                         } catch (Exception e) {
                         e.printStackTrace();
