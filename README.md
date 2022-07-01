@@ -16,10 +16,10 @@ The { }(curly brace) represents the json object and The [ ](square bracket) repr
             "employee":
                  {
                   "name":  sachin,
-                "salary":  56000,
-                "status":  married
-                }
-            }        
+                  "salary":  56000,
+                  "status":  married
+                  }
+             }        
             
             
             
@@ -135,6 +135,30 @@ MainActivity.java file
             
             
 ![tttttttttttttt](https://user-images.githubusercontent.com/101108540/166904252-fc3c41cb-aaa6-4286-abe1-012d88b45732.jpg)
+
+
+
+
+
+
+
+
+
+
+# Another example :
+
+
+
+
+              {
+                 {
+                  "name":  sachin,
+                  "salary":  56000,
+                  "status":  married
+                  }
+              }  
+
+
 
             
 
